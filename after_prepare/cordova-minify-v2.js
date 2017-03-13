@@ -221,7 +221,10 @@ switch (platform) {
         return;
 }
 
-var foldersToProcess = ['javascript', 'style', 'media', 'js', 'img', 'css', 'html'];
+var foldersToProcess = ['javascript', 'style', 'media', 'js', 'img', 'css', 'html', 'cordova-js-src'];
+
+// windows platform
+foldersToProcess.push('WinJS');
 
 if (processRoot) processFiles(platformPath, true);
 
