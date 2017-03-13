@@ -211,10 +211,13 @@ switch (platform) {
         platformPath = path.join(platformPath, platform, "assets", "www");
         break;
     case 'ios':
+    case 'wp8':
+    case 'windows':
+    case 'browser':
         platformPath = path.join(platformPath, platform, "www");
         break;
     default:
-        console.error('Hook currently supports only Android and iOS');
+        console.error('Hook currently supports only Android, iOS, WP8, Windows and Browser');
         return;
 }
 
